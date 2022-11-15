@@ -8,7 +8,6 @@ public class WallClimb : MonoBehaviour
     public float CLIMB_REACH;
     PlayerMovement movementScript;
 
-    RaycastHit hit;
 
 
     // Start is called before the first frame update
@@ -24,7 +23,7 @@ public class WallClimb : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            if (Physics.Raycast(movementScript.playerCamera.transform.position, transform.forward, out hit, CLIMB_REACH, movementScript.groundMask))
+            if (Physics.Raycast(movementScript.playerCamera.transform.position, transform.forward, out RaycastHit hit, CLIMB_REACH, movementScript.groundMask))
             {
                 movementScript.velocity.y = CLIMB_SPEED;
             }
