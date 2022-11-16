@@ -363,6 +363,8 @@
 "Assets/Player/PlayerLook.cs"
 "Assets/Player/PlayerMovement.cs"
 "Assets/Player/Teleport.cs"
+"Assets/Player/ThrowingKnives/ThrowingKnives.cs"
+"Assets/Player/ThrowingKnives/TKDefaultScript.cs"
 "Assets/Player/WallClimb.cs"
 -langversion:9.0
 

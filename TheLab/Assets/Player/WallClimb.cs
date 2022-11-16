@@ -21,7 +21,7 @@ public class WallClimb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(PlayerKeybinds.jump))
         {
             if (Physics.Raycast(movementScript.playerCamera.transform.position, transform.forward, out RaycastHit hit, CLIMB_REACH, movementScript.groundMask))
             {

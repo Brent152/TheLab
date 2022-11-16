@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 246477226}
   - component: {fileID: 246477228}
   - component: {fileID: 246477227}
+  - component: {fileID: 246477229}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -369,6 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SPEED: 12
+  PLAYER_WIDTH_ADJUST: 0
   HEAD_CHECK_DISTANCE: 0
   GROUND_CHECK_DISTANCE: 0.4
   JUMP_HEIGHT: 3
@@ -538,6 +540,20 @@ MonoBehaviour:
   DASH_SPEED: 0
   DASH_TIME_SECONDS: 0
   isDashing: 0
+--- !u!114 &246477229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246477218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71751aa8cb4eb8d4c880d2fee027e218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  THROWING_KNIFE_SPEED: 0
+  throwingKnife: {fileID: 2314670774215410432, guid: 97f4a59572ace8d46a354629ef7f06dd, type: 3}
 --- !u!1 &563915585
 GameObject:
   m_ObjectHideFlags: 0

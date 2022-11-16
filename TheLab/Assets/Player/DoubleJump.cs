@@ -23,7 +23,7 @@ public class DoubleJump : MonoBehaviour
             usedDoubleJump = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && !movementScript.isGrounded && !usedDoubleJump)
+        if (Input.GetKeyDown(PlayerKeybinds.jump) && !movementScript.isGrounded && !usedDoubleJump)
         {
             movementScript.jump(movementScript.JUMP_HEIGHT, movementScript.playerGravity.y);
             usedDoubleJump = true;

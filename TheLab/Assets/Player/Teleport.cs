@@ -16,7 +16,6 @@ public class Teleport : MonoBehaviour
     void Start()
     {
         MAX_DISTANCE = 80f;
-        PLAYER_WIDTH_ADJUST = 1.5f;
         movementScript = GetComponent<PlayerMovement>();
 
     }
@@ -24,16 +23,16 @@ public class Teleport : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(PlayerKeybinds.auxMovement))
         {
             if (Physics.Raycast(movementScript.playerCamera.transform.position,
             movementScript.playerCamera.transform.forward,
             out RaycastHit hit,
             MAX_DISTANCE, movementScript.groundMask))
             {
-                Debug.Log(movementScript.playerCamera.transform.forward * PLAYER_WIDTH_ADJUST);
+                Debug.Log(movementScript.playerCamera.transform.forward * movementScript.PLAYER_WIDTH_ADJUST);
                 movementScript.controller.enabled = false;
-                transform.position = hit.point + hit.normal * PLAYER_WIDTH_ADJUST;
+                transform.position = hit.point + hit.normal * movementScript.PLAYER_WIDTH_ADJUST;
                 movementScript.controller.enabled = true;
             }
         }

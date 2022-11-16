@@ -24,7 +24,7 @@ public class Dash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing)
+        if (Input.GetKeyDown(PlayerKeybinds.auxMovement) && !isDashing)
         {
             isDashing = true;
             originalVelocity = movementScript.velocity;

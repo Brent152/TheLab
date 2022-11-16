@@ -22,14 +22,14 @@ public class Crouch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !isCrouching)
+        if (Input.GetKeyDown(PlayerKeybinds.crouch) && !isCrouching)
         {
             isCrouching = true;
             movementScript.controller.height = playerHeight / 2;
             movementScript.playerCamera.transform.position -= new Vector3(0, playerHeight * CROUCH_RATIO, 0);
         }
 
-        if (isCrouching && !movementScript.hitRoof && !Input.GetKey(KeyCode.LeftControl))
+        if (isCrouching && !movementScript.hitRoof && !Input.GetKey(PlayerKeybinds.crouch))
         {
             isCrouching = false;
             movementScript.controller.height = playerHeight;

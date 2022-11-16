@@ -2,10 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public static class PlayerKeybinds
+{
+    public static int primaryFire = 0; // 0 is left click
+    public static KeyCode jump = KeyCode.Space;
+    public static KeyCode auxMovement = KeyCode.LeftShift;
+    public static KeyCode crouch = KeyCode.LeftControl;
+
+
+}
+
 public class PlayerMovement : MonoBehaviour
 {
 
     public float SPEED;
+    public float PLAYER_WIDTH_ADJUST;
     public float HEAD_CHECK_DISTANCE;
     public float GROUND_CHECK_DISTANCE;
     public float JUMP_HEIGHT;
@@ -28,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         GROUND_CHECK_DISTANCE = .4f;
         HEAD_CHECK_DISTANCE = .4f;
         JUMP_HEIGHT = 3f;
+        PLAYER_WIDTH_ADJUST = 1.5f;
 
         controller = GetComponent<CharacterController>();
         groundCheck = GameObject.Find("GroundCheck").transform;
@@ -53,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 velocity.y = -2f;
             }
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(PlayerKeybinds.jump))
             {
                 jump(JUMP_HEIGHT, playerGravity.y);
             }
