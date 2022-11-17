@@ -357,15 +357,17 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Player/Abilities/AuxMovement/DoubleJump.cs"
+"Assets/Player/Abilities/AuxMovement/Platform/Platform.cs"
+"Assets/Player/Abilities/AuxMovement/Teleport.cs"
+"Assets/Player/Abilities/AuxMovement/WallClimb.cs"
+"Assets/Player/Abilities/ThrowingKnives/ExtraThrows.cs"
+"Assets/Player/Abilities/ThrowingKnives/ThrowingKnives.cs"
+"Assets/Player/Abilities/ThrowingKnives/TKDefaultScript.cs"
 "Assets/Player/Crouch.cs"
 "Assets/Player/Dash.cs"
-"Assets/Player/DoubleJump.cs"
 "Assets/Player/PlayerLook.cs"
 "Assets/Player/PlayerMovement.cs"
-"Assets/Player/Teleport.cs"
-"Assets/Player/ThrowingKnives/ThrowingKnives.cs"
-"Assets/Player/ThrowingKnives/TKDefaultScript.cs"
-"Assets/Player/WallClimb.cs"
 -langversion:9.0
 
 /deterministic
