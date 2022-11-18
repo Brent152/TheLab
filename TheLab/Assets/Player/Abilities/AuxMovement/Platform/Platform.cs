@@ -20,11 +20,11 @@ public class Platform : MonoBehaviour
     {
         if (Input.GetKeyDown(PlayerKeybinds.auxMovement))
         {
-            StartCoroutine("createPlatform", PLATFORM_TIME_SECONDS);
+            StartCoroutine("CreatePlatform", PLATFORM_TIME_SECONDS);
         }
     }
 
-    IEnumerator createPlatform(float time)
+    IEnumerator CreatePlatform(float time)
     {
 
         GameObject pt = Instantiate(

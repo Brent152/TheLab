@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (Input.GetKeyDown(PlayerKeybinds.jump))
             {
-                jump(JUMP_HEIGHT, playerGravity.y);
+                Jump(JUMP_HEIGHT, playerGravity.y);
             }
         }
 
@@ -82,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void jump(float jumpHeight, float inputGravity)
+    public void Jump(float jumpHeight, float inputGravity)
     {
         velocity.y = Mathf.Sqrt(jumpHeight * -2f * inputGravity);
     }
