@@ -363,13 +363,14 @@
 "Assets/Player/Abilities/AuxMovement/Platform/Platform.cs"
 "Assets/Player/Abilities/AuxMovement/Teleport.cs"
 "Assets/Player/Abilities/AuxMovement/WallClimb.cs"
+"Assets/Player/Abilities/Dash.cs"
 "Assets/Player/Abilities/Weapons/ThrowingKnives/ExtraThrows.cs"
 "Assets/Player/Abilities/Weapons/ThrowingKnives/ThrowingKnives.cs"
 "Assets/Player/Abilities/Weapons/ThrowingKnives/TKDefaultScript.cs"
 "Assets/Player/Crouch.cs"
-"Assets/Player/Dash.cs"
 "Assets/Player/PlayerLook.cs"
 "Assets/Player/PlayerMovement.cs"
+"Assets/Player/Punch.cs"
 "Assets/ToolScripts/NewBehaviourScript.cs"
 -langversion:9.0
 

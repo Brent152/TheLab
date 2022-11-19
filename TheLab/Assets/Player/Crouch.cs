@@ -14,7 +14,7 @@ public class Crouch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CROUCH_RATIO = .33f;
+        CROUCH_RATIO = .2f;
         movementScript = GetComponent<PlayerMovement>();
         playerHeight = GetComponent<CharacterController>().height;
     }

@@ -5,10 +5,11 @@ using UnityEngine;
 
 public static class PlayerKeybinds
 {
-    public static int primaryFire = 0; // 0 is left click
+    public static KeyCode primaryFire = KeyCode.Mouse0;
     public static KeyCode jump = KeyCode.Space;
     public static KeyCode auxMovement = KeyCode.LeftShift;
     public static KeyCode crouch = KeyCode.LeftControl;
+    public static KeyCode melee = KeyCode.Mouse4;
 
 
 }

@@ -22,7 +22,7 @@ public class ThrowingKnives : MonoBehaviour
     // Update is called once per frames
     void Update()
     {
-        if (Input.GetMouseButtonDown(PlayerKeybinds.primaryFire) && !isThrowing)
+        if (Input.GetKeyDown(PlayerKeybinds.primaryFire) && !isThrowing)
         {
             StartCoroutine("ThrowKnife", numThrows);
         }

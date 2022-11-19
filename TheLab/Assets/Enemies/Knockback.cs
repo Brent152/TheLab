@@ -21,7 +21,7 @@ public class Knockback : MonoBehaviour
 
     public void TakeKnockback(Vector3 knockbackForce)
     {
-        Debug.Log("KNOCKED BACK: " + knockbackForce);
+        // Debug.Log("KNOCKED BACK: " + knockbackForce);
         rb.AddForce(knockbackForce, ForceMode.Impulse);
     }
 
