@@ -14,6 +14,7 @@ public class TKDefaultScript : MonoBehaviour
     {
         DAMAGE = 20;
         KNOCKBACK = new Vector3(0, 5f, 0);
+
         MAX_LIFETIME_SECONDS = 5.0f;
         rb = GetComponent<Rigidbody>();
         StartCoroutine("StartLifeTimer", MAX_LIFETIME_SECONDS);
